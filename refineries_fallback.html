@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a10267a6f7e6100082e9acc56c9a3ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7a10267a6f7e6100082e9acc56c9a3ce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7a10267a6f7e6100082e9acc56c9a3ce = L.map(
+                "map_7a10267a6f7e6100082e9acc56c9a3ce",
+                {
+                    center: [61.0, 105.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a1ea88db1f6d8dcc626689098a722e2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3a1ea88db1f6d8dcc626689098a722e2.addTo(map_7a10267a6f7e6100082e9acc56c9a3ce);
+        
+    
+            var marker_cluster_9559e5b3950976fd1d3a50aee2d2b492 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_9bfca2599dbe9d1d983acc29a13a1084 = L.marker(
+                [54.7651896, 52.2429763],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_9d4bf5456a3d333c50f62733c88cf363 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b88181724523579cc2214efc2fe2ad4 = $(`<div id="html_3b88181724523579cc2214efc2fe2ad4" style="width: 100.0%; height: 100.0%;">Unnamed (OSM)</div>`)[0];
+                popup_9d4bf5456a3d333c50f62733c88cf363.setContent(html_3b88181724523579cc2214efc2fe2ad4);
+            
+        
+
+        marker_9bfca2599dbe9d1d983acc29a13a1084.bindPopup(popup_9d4bf5456a3d333c50f62733c88cf363)
+        ;
+
+        
+    
+    
+            var marker_9e3b11702085aae04b53aba882ad2d3f = L.marker(
+                [50.6243063, 137.0629821],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_e4164307076799742d654f22e1ab7abd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38c23f9137ed76f6c450bf3df8dd355c = $(`<div id="html_38c23f9137ed76f6c450bf3df8dd355c" style="width: 100.0%; height: 100.0%;">Комсомольский нефтеперерабатывающий завод (OSM)</div>`)[0];
+                popup_e4164307076799742d654f22e1ab7abd.setContent(html_38c23f9137ed76f6c450bf3df8dd355c);
+            
+        
+
+        marker_9e3b11702085aae04b53aba882ad2d3f.bindPopup(popup_e4164307076799742d654f22e1ab7abd)
+        ;
+
+        
+    
+    
+            var marker_cb3d3337605daafcb53203968565f277 = L.marker(
+                [55.8316693, 52.3300563],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_9af52dd868eefe7714090b844ede5190 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e59dc2c9e1f7f04f76e0550629588830 = $(`<div id="html_e59dc2c9e1f7f04f76e0550629588830" style="width: 100.0%; height: 100.0%;">УППН «Кызыл-Тау» (OSM)</div>`)[0];
+                popup_9af52dd868eefe7714090b844ede5190.setContent(html_e59dc2c9e1f7f04f76e0550629588830);
+            
+        
+
+        marker_cb3d3337605daafcb53203968565f277.bindPopup(popup_9af52dd868eefe7714090b844ede5190)
+        ;
+
+        
+    
+    
+            var marker_3928231f2a1d6ad0c97c682a3be6ba48 = L.marker(
+                [54.8817914, 52.0184223],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_c5579e12cb5d2ccc7fefdcda303034cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caf9dde244f5e15e346961917ff7e834 = $(`<div id="html_caf9dde244f5e15e346961917ff7e834" style="width: 100.0%; height: 100.0%;">Unnamed (OSM)</div>`)[0];
+                popup_c5579e12cb5d2ccc7fefdcda303034cf.setContent(html_caf9dde244f5e15e346961917ff7e834);
+            
+        
+
+        marker_3928231f2a1d6ad0c97c682a3be6ba48.bindPopup(popup_c5579e12cb5d2ccc7fefdcda303034cf)
+        ;
+
+        
+    
+    
+            var marker_88b657f8f230555a55cedb5fcc3e3ba3 = L.marker(
+                [55.0707803, 73.227772],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_d2408d0998c2e053c5a5d24739c72ecb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14805efe0dfa044eb037df5184589d4e = $(`<div id="html_14805efe0dfa044eb037df5184589d4e" style="width: 100.0%; height: 100.0%;">Омский нефтеперерабатывающий завод (OSM)</div>`)[0];
+                popup_d2408d0998c2e053c5a5d24739c72ecb.setContent(html_14805efe0dfa044eb037df5184589d4e);
+            
+        
+
+        marker_88b657f8f230555a55cedb5fcc3e3ba3.bindPopup(popup_d2408d0998c2e053c5a5d24739c72ecb)
+        ;
+
+        
+    
+    
+            var marker_79ff6dd8947ffa8996e844543b2f8005 = L.marker(
+                [59.7118565, 28.4332494],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_a47830ec5dbca47b72143e5bb8cf421a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96c1f52fff0e9608beb5df0f7a3a3ed4 = $(`<div id="html_96c1f52fff0e9608beb5df0f7a3a3ed4" style="width: 100.0%; height: 100.0%;">Комплекс по перевалке газового конденсата (OSM)</div>`)[0];
+                popup_a47830ec5dbca47b72143e5bb8cf421a.setContent(html_96c1f52fff0e9608beb5df0f7a3a3ed4);
+            
+        
+
+        marker_79ff6dd8947ffa8996e844543b2f8005.bindPopup(popup_a47830ec5dbca47b72143e5bb8cf421a)
+        ;
+
+        
+    
+    
+            var marker_2c9787633f1f757e916270fc86cb2712 = L.marker(
+                [57.4678656, 45.8021202],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_74dd3d2157976d8daf9fa959cecda323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3386b69f51262ed4afd0c26c8fcb73c5 = $(`<div id="html_3386b69f51262ed4afd0c26c8fcb73c5" style="width: 100.0%; height: 100.0%;">Оргхим (OSM)</div>`)[0];
+                popup_74dd3d2157976d8daf9fa959cecda323.setContent(html_3386b69f51262ed4afd0c26c8fcb73c5);
+            
+        
+
+        marker_2c9787633f1f757e916270fc86cb2712.bindPopup(popup_74dd3d2157976d8daf9fa959cecda323)
+        ;
+
+        
+    
+    
+            var marker_2278d7dd52a9e16d154b6198c651d160 = L.marker(
+                [57.9452121, 53.510292],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_559b4dcc2646469424e5fbe0944ce8f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ab53e0e6a383b1e917927b5cbfbd55b = $(`<div id="html_9ab53e0e6a383b1e917927b5cbfbd55b" style="width: 100.0%; height: 100.0%;">ППСН "Кез" ОАО "Удмуртнефть" (OSM)</div>`)[0];
+                popup_559b4dcc2646469424e5fbe0944ce8f5.setContent(html_9ab53e0e6a383b1e917927b5cbfbd55b);
+            
+        
+
+        marker_2278d7dd52a9e16d154b6198c651d160.bindPopup(popup_559b4dcc2646469424e5fbe0944ce8f5)
+        ;
+
+        
+    
+    
+            var marker_58fffc63e0a508d07b17763cf07a68ca = L.marker(
+                [57.1628839, 45.1177281],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_e8f8c1717037fd3c9d4e204779787b59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64d70544fc847993c744142f94bf3136 = $(`<div id="html_64d70544fc847993c744142f94bf3136" style="width: 100.0%; height: 100.0%;">ООО "Метоксил", ветлужский завод (OSM)</div>`)[0];
+                popup_e8f8c1717037fd3c9d4e204779787b59.setContent(html_64d70544fc847993c744142f94bf3136);
+            
+        
+
+        marker_58fffc63e0a508d07b17763cf07a68ca.bindPopup(popup_e8f8c1717037fd3c9d4e204779787b59)
+        ;
+
+        
+    
+    
+            var marker_37a628ef23f85e54f522b0a0c6afec59 = L.marker(
+                [56.6234788, 85.0106913],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_e5ed4958b39b7249909a826d27ce2648 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3641e20cbff169a851a80b36213118cf = $(`<div id="html_3641e20cbff169a851a80b36213118cf" style="width: 100.0%; height: 100.0%;">Производство полиэтилена (ПЭВД) (OSM)</div>`)[0];
+                popup_e5ed4958b39b7249909a826d27ce2648.setContent(html_3641e20cbff169a851a80b36213118cf);
+            
+        
+
+        marker_37a628ef23f85e54f522b0a0c6afec59.bindPopup(popup_e5ed4958b39b7249909a826d27ce2648)
+        ;
+
+        
+    
+    
+            var marker_1d9be0244e8a7e53aabc62965301eafe = L.marker(
+                [61.8172157, 77.2298684],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_a816c50795daaea753af6c6c068e9b12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64f9b5e0abe49c78e8bcecf70322b562 = $(`<div id="html_64f9b5e0abe49c78e8bcecf70322b562" style="width: 100.0%; height: 100.0%;">ЦПС Ван-Еган (OSM)</div>`)[0];
+                popup_a816c50795daaea753af6c6c068e9b12.setContent(html_64f9b5e0abe49c78e8bcecf70322b562);
+            
+        
+
+        marker_1d9be0244e8a7e53aabc62965301eafe.bindPopup(popup_a816c50795daaea753af6c6c068e9b12)
+        ;
+
+        
+    
+    
+            var marker_34c5938510c36d19432e45de345e6c9a = L.marker(
+                [51.0629963, 39.9519085],
+                {
+}
+            ).addTo(marker_cluster_9559e5b3950976fd1d3a50aee2d2b492);
+        
+    
+        var popup_7d0b9333b72ca9744172349b88a81128 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26103bc76d31d09a4271879f6ce279dd = $(`<div id="html_26103bc76d31d09a4271879f6ce279dd" style="width: 100.0%; height: 100.0%;">Бобровский нефтеперерабатывающий завод (OSM)</div>`)[0];
+                popup_7d0b9333b72ca9744172349b88a81128.setContent(html_26103bc76d31d09a4271879f6ce279dd);
+            
+        
+
+        marker_34c5938510c36d19432e45de345e6c9a.bindPopup(popup_7d0b9333b72ca9744172349b88a81128)
+        ;
+
+        
+    
+    
+            marker_cluster_9559e5b3950976fd1d3a50aee2d2b492.addTo(map_7a10267a6f7e6100082e9acc56c9a3ce);
+        
+</script>
+</html>
