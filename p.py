@@ -20,14 +20,14 @@ def get_wikidata_refineries():
       SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
     }
     """
-    headers = {'User-Agent': 'RefineryMapper/1.0 (michael@example.com)', 'Accept': 'application/sparql-results+json'}
+    headers = {'User-Agent': 'RefineryMapper/1.0 (Mycole@example.com)', 'Accept': 'application/sparql-results+json'}
     
     try:
         response = requests.get(url, params={'query': query}, headers=headers, timeout=30)
         response.raise_for_status()
         results = response.json()['results']['bindings']
         
-        # Standardize format for our map
+        # Standardize format for the map
         standardized = []
         for r in results:
             # Wikidata coords come in 'Point(lon lat)' format
